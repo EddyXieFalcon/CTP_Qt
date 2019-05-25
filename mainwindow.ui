@@ -52,54 +52,54 @@
         <item>
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="0">
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="labelQuotationsAddress">
             <property name="text">
              <string>行情地址</string>
             </property>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="lineEditQuotationsAddress"/>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="labelTradeAddress">
             <property name="text">
              <string>交易地址</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="lineEditTradeAddress"/>
           </item>
           <item row="2" column="0">
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="labelBrokerID">
             <property name="text">
              <string>BrokerID</string>
             </property>
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_3"/>
+           <widget class="QLineEdit" name="lineEditBrokerID"/>
           </item>
           <item row="3" column="0">
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="labelUserName">
             <property name="text">
              <string>用户名</string>
             </property>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QLineEdit" name="lineEditUserName"/>
           </item>
           <item row="4" column="0">
-           <widget class="QLabel" name="label_5">
+           <widget class="QLabel" name="labelAccounts">
             <property name="text">
              <string>帐号</string>
             </property>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEdit_5"/>
+           <widget class="QLineEdit" name="lineEditAccounts"/>
           </item>
          </layout>
         </item>
@@ -119,7 +119,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="btnLogIn">
             <property name="text">
              <string>登陆</string>
             </property>
@@ -139,7 +139,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="btnLogOut">
             <property name="text">
              <string>退出</string>
             </property>
@@ -184,42 +184,42 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_5">
               <item>
-               <widget class="QLabel" name="label_6">
+               <widget class="QLabel" name="labelContractCode">
                 <property name="text">
                  <string>合约代码</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_6"/>
+               <widget class="QLineEdit" name="lineEditContractCode"/>
               </item>
              </layout>
             </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_4">
               <item>
-               <widget class="QLabel" name="label_7">
+               <widget class="QLabel" name="labelOrderQuantity">
                 <property name="text">
                  <string>下单数量</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_7"/>
+               <widget class="QLineEdit" name="lineEditOrderQuantity"/>
               </item>
              </layout>
             </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_3">
               <item>
-               <widget class="QRadioButton" name="radioButton_3">
+               <widget class="QRadioButton" name="rbtnCloseTodayPosition">
                 <property name="text">
                  <string>平今仓</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QRadioButton" name="radioButton_2">
+               <widget class="QRadioButton" name="rbtnCloseYesterdayPosition">
                 <property name="text">
                  <string>平昨仓</string>
                 </property>
@@ -230,28 +230,28 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
-               <widget class="QRadioButton" name="radioButton_4">
+               <widget class="QRadioButton" name="rbtnLimitedPrice">
                 <property name="text">
                  <string>限价</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_8"/>
+               <widget class="QLineEdit" name="lineEditLimitedPrice"/>
               </item>
              </layout>
             </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
               <item>
-               <widget class="QRadioButton" name="radioButton">
+               <widget class="QRadioButton" name="rbtnMarketPrice">
                 <property name="text">
                  <string>市价</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox">
+               <widget class="QComboBox" name="comboBoxMarketPrice">
                 <item>
                  <property name="text">
                   <string>开多</string>
@@ -281,70 +281,70 @@
           <item>
            <layout class="QGridLayout" name="gridLayout_2">
             <item row="0" column="0">
-             <widget class="QLabel" name="label_8">
+             <widget class="QLabel" name="labelSellingPriceName">
               <property name="text">
                <string>卖一价:</string>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLabel" name="label_10">
+             <widget class="QLabel" name="labelSellingPrice">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item row="1" column="0">
-             <widget class="QLabel" name="label_9">
+             <widget class="QLabel" name="labelLatestPriceName">
               <property name="text">
                <string>最新价:</string>
               </property>
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLabel" name="label_11">
+             <widget class="QLabel" name="labelLatestPrice">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item row="2" column="0">
-             <widget class="QLabel" name="label_12">
+             <widget class="QLabel" name="labelBuyPriceName">
               <property name="text">
                <string>买一价:</string>
               </property>
              </widget>
             </item>
             <item row="2" column="1">
-             <widget class="QLabel" name="label_13">
+             <widget class="QLabel" name="labelBuyPrice">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item row="3" column="0">
-             <widget class="QLabel" name="label_14">
+             <widget class="QLabel" name="labelHighLimitPriceName">
               <property name="text">
                <string>涨停价:</string>
               </property>
              </widget>
             </item>
             <item row="3" column="1">
-             <widget class="QLabel" name="label_15">
+             <widget class="QLabel" name="labelHighLimitPrice">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item row="4" column="0">
-             <widget class="QLabel" name="label_16">
+             <widget class="QLabel" name="labelDownLimitPriceName">
               <property name="text">
                <string>跌停价:</string>
               </property>
              </widget>
             </item>
             <item row="4" column="1">
-             <widget class="QLabel" name="label_17">
+             <widget class="QLabel" name="labelDownLimitPrice">
               <property name="text">
                <string>0</string>
               </property>
@@ -355,7 +355,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="btnOrder">
           <property name="text">
            <string>下单</string>
           </property>
