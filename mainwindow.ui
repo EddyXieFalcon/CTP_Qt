@@ -21,7 +21,7 @@
        <enum>QTabWidget::North</enum>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tabQuotations">
        <attribute name="title">
@@ -354,25 +354,15 @@
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditBrokerID"/>
+          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="labelQuotationsAddress">
             <property name="text">
              <string>行情地址</string>
             </property>
            </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEditQuotationsAddress"/>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="labelTradeAddress">
-            <property name="text">
-             <string>交易地址</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEditTradeAddress"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="labelBrokerID">
@@ -381,28 +371,38 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEditBrokerID"/>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditQuotationsAddress"/>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="labelUserName">
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEditPassword"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditTradeAddress"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelTradeAddress">
             <property name="text">
-             <string>用户名</string>
+             <string>交易地址</string>
             </property>
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="lineEditUserName"/>
+           <widget class="QLineEdit" name="lineEditAccounts"/>
           </item>
-          <item row="4" column="0">
+          <item row="3" column="0">
            <widget class="QLabel" name="labelAccounts">
             <property name="text">
              <string>帐号</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEditAccounts"/>
+          <item row="4" column="0">
+           <widget class="QLabel" name="labelPassword">
+            <property name="text">
+             <string>密码</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -519,6 +519,12 @@
                 <property name="text">
                  <string>平今仓</string>
                 </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
                </widget>
               </item>
               <item>
@@ -526,6 +532,9 @@
                 <property name="text">
                  <string>平昨仓</string>
                 </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
                </widget>
               </item>
              </layout>
@@ -537,6 +546,9 @@
                 <property name="text">
                  <string>限价</string>
                 </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup_2</string>
+                </attribute>
                </widget>
               </item>
               <item>
@@ -551,6 +563,12 @@
                 <property name="text">
                  <string>市价</string>
                 </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup_2</string>
+                </attribute>
                </widget>
               </item>
               <item>
@@ -719,4 +737,8 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
 </ui>
